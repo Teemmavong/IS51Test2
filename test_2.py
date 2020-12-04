@@ -31,7 +31,18 @@ def main():
     grades = studentgrades("final.txt")
 
 def studentgrades(txt_file):
-    infile = open("final.txt", "r")
+    infile = open(txt_file, "r")
+    ListA = [numbers() for numbers in infile]
     infile.close()
+    return len(ListA)
+    Total = sum(ListA)
+    Average = Total / len(ListA)
+    return Average
 
-main() 
+def StudentAboveAverage():
+    for i in ListA > Average:
+        AboveAverage = []
+        percentage = AboveAverage / len(ListA)
+    return percentage
+
+main()
